@@ -1,0 +1,34 @@
+.blueOrangeBorderBox {
+  border-top: 5px solid orange;
+  background: blue;
+  color: #fff;
+  display: block;
+  width: 50px;
+  height: 50px;
+  padding: 2px;
+}
+.blueColorBox {
+  background: blue;
+  color: #fff;
+  display: block;
+  width: 50px;
+  height: 50px;
+  padding: 2px;
+}
+.blackColorBox {
+  background: black;
+  color: #fff;
+  display: block;
+  width: 50px;
+  height: 50px;
+  padding: 2px;
+}
+.blackOrangeBorderBox {
+  border-top: 5px solid orange;
+  background: black;
+  color: #fff;
+  display: block;
+  width: 50px;
+  height: 50px;
+  padding: 2px;
+}
