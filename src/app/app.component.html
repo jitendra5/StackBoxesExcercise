@@ -24,7 +24,10 @@
   <br>
   <br>
   <div *ngIf='boxes.length'>
-    <span [style.font-size.px]="getFontSize(boxes.length)">
+    <!-- <span [style.font-size.px]="getFontSize(boxes.length)">
+      {{boxes.length}}
+    </span> -->
+    <span [style.font-size.px]="getFontSize()">
       {{boxes.length}}
     </span>
   </div>

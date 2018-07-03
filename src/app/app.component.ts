@@ -12,10 +12,11 @@ export class AppComponent {
   fontSize: number;
   isAddBoxButtonClicked = false;
   constructor() {
-    this.fontSize = 10;
+    this.fontSize = 20;
   }
   addBox() {
     this.boxes.push(this.count + 1);
+    this.fontSize = this.fontSize + 5;
     this.isAddBoxButtonClicked = true;
     this.count++;
   }
@@ -26,6 +27,7 @@ export class AppComponent {
     } else {
       this.count = 0;
     }
+    this.fontSize = this.fontSize - 5;
     this.isAddBoxButtonClicked = false;
   }
   getBoxColor(colorVar) {
@@ -42,11 +44,18 @@ export class AppComponent {
     }
   }
 
-  getFontSize(sizeParam) {
+  // getFontSize(sizeParam) {
+  //   if (this.isAddBoxButtonClicked) {
+  //     return sizeParam * 10;
+  //   } else {
+  //     return (sizeParam + 1) * 10 - 10;
+  //   }
+  // }
+  getFontSize() {
     if (this.isAddBoxButtonClicked) {
-      return sizeParam * 10;
+      return this.fontSize;
     } else {
-      return (sizeParam + 1) * 10 - 10;
+      return this.fontSize;
     }
   }
 }
